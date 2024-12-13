@@ -4,5 +4,5 @@ Application returns current date using custom Python script. It demonstrates usi
 ```bash
 podman TODO
 ```
-## How It Works:
+## How it works
 1. 
