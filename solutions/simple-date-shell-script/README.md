@@ -1,7 +1,10 @@
-# Simple date using shell
-A "Hello World" example that returns current date using shell command "date". It demonstrates how to run a shell command as isolated app inside a container. 
+# Simple date using shell script
+Container that returns current date using custom shell script instead of running `date` command.
 
-Anything command would write to a disk is lost because a container, the writtable layer, is removed after the execution.
+RUN CONTAINER BUT DON'T DELETE
+COPY SCRIPT TO CONTAINER
+RUN COMMAND TO START THE SCRIPT
+DELETE 
 
 ```bash
 podman run --rm alpine:latest /bin/sh -c "date"

@@ -44,4 +44,6 @@ podman machine stop
 
 
 ## Solutions
-- [Get current date](solutions/simple-date-shell/README.md)
+- [Current date using shell](solutions/simple-date-shell/README.md)
+- [Current date using shell script](solutions/simple-date-shell-script/README.md)
+- [Current date using python](solutions/simple-date-python/README.md)
