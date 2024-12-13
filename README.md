@@ -19,7 +19,7 @@ A **container image is a read-only**, reusable blueprint containing the applicat
 
 
 ## Development environment
-Since MacOS and Windows aren't Linux, we need to have Linux virtual machine to develop containers. Setting up local and interfacing with Linux virtual machine is abstracted by development tools like Podman Desktop or Docker Desktop.
+Since MacOS and Windows aren't Linux, we need to have Linux virtual machine to develop containers. Setting up local VM and interfacing with it is abstracted by development tools like Podman Desktop or Docker Desktop.
 
 Install Podman Desktop using [official documentation](https://podman.io/docs/installation).
 
