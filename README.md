@@ -44,4 +44,4 @@ podman machine stop
 
 
 ## Solutions
-- [Get current date](solutions/01-simpe-date/README.md)
+- [Get current date](solutions/simple-date-shell/README.md)
