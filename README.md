@@ -2,12 +2,12 @@
 Notes from learning applicaiton containerization.
 
 ## Containers
-Containers in Linux provide a **lightweight form of virtualization that isolates applications and their dependencies** from the host system and other containers.  **Containerised applications behave as if they are running on their own dedicated system**. 
+Containers in Linux provide a **lightweight form of virtualization that isolates applications and their dependencies** from the host system and other containers.  **containerized applications behave as if they are running on their own dedicated system**. 
 
 This isolation is achieved through [namespaces](https://en.wikipedia.org/wiki/Linux_namespaces) (e.g., PID, network, and file system) to separate resources, and [cgroups](https://en.wikipedia.org/wiki/Cgroups) to limit resource usage like CPU, memory, and disk.
 
 ## Runtime engines
-Runtime engines are essential for running containerised application as they handle container creation and execution. They follow [OCI standards](https://opencontainers.org/) and manage container lifecycles, isolation, and resource allocation. Common runtime engines: containerd, runc, crun, CRI-O.
+Runtime engines are essential for running containerized application as they handle container creation and execution. They follow [OCI standards](https://opencontainers.org/) and manage container lifecycles, isolation, and resource allocation. Common runtime engines: containerd, runc, crun, CRI-O.
 
 Runtime engines are used by **container management tools** like [**Podman**](https://podman.io/), [Docker](https://www.docker.com/) or [Kubertnetes](https://kubernetes.io/), which provide higher level management interface to manage and develop container images.
 
