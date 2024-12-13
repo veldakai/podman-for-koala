@@ -9,5 +9,5 @@ DELETE
 ```bash
 podman run --rm alpine:latest /bin/sh -c "date"
 ```
-## How It Works:
+## How it works
 1. `podman ` wregwg
