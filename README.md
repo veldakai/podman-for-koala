@@ -1,11 +1,26 @@
 # Podman for Koala
-Podman experiments for learning
+Notes from learning applicaiton containerization.
+
+## Containers
+Containers in Linux provide a **lightweight form of virtualization that isolates applications and their dependencies** from the host system and other containers.  **Applications behave as if they are running on their own dedicated system**. 
+
+This isolation is achieved through namespaces (e.g., PID, network, and file system) to separate resources, and cgroups to limit resource usage like CPU, memory, and disk.
+
+## Runtime engines
+Runtime engines are essential for running containers as they handle container creation and execution. They follow [OCI standards](https://opencontainers.org/) and manage container lifecycles, isolation, and resource allocation. Common runtime engines: containerd, runc, crun, CRI-O.
+
+Runtime engines are used by **container management tools** like [**Podman**](https://podman.io/), [Docker](https://www.docker.com/) or [Kubertnetes](https://kubernetes.io/), which provide higher level management interface to manage and develop container images.
+
+## Container images
+
+A **container image is a read-only**, reusable blueprint containing the application's code, runtime, libraries, and dependencies. **Images are composed of layers**, where each layer represents a filesystem delta, enabling efficient storage and updates.
+
+**When you run a container, runtime engine creates a container instance, which is a writable layer added on top of the image**. This reusability of images and layers reduces duplication and allows rapid scaling of containerized applications.
 
 
-## Getting started
+## Development environment
+
 Install Podman using [official documentation](https://podman.io/docs/installation).
-
-Note: Linux installation doesn't need virtual machine, containers run natively. Check specific instruction for [production deployment on Linux](https://podman.io/docs/installation#installing-on-linux).
 
 
 ### MacOS installation
@@ -25,6 +40,7 @@ When you done working, stop the VM machine either by quitting Desktop or
 ```bash
 podman machine stop
 ```
+
 
 ## Solutions
 - [Get current date](solutions/01-simpe-date/README.md)
