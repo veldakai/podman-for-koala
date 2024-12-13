@@ -25,3 +25,6 @@ When you done working, stop the VM machine either by quitting Desktop or
 ```bash
 podman machine stop
 ```
+
+## Solutions
+- [Get current date](solutions/01-simpe-date/README.md)
